@@ -15,7 +15,6 @@ else:
 
 def set_custom_style():
     """Inject custom CSS to style the Streamlit app."""
-    # This part injects the CSS for styling and animations
     st.markdown("""
         <style>
             /* Define a glowing animation for button borders/shadows */
@@ -107,7 +106,6 @@ def create_mcp_server_dropdown():
 
 def generate_response(user_text, selected_mode):
     """Generate response using the official Hugging Face InferenceClient"""
-    
     model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
     
     if selected_mode == 'AI Toolkit':
